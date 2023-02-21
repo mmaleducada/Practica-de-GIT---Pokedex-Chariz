@@ -1,0 +1,74 @@
+.container{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.titulo{
+  font-size: 1rem;
+}
+.slide{
+    margin-top: 10px;
+}
+
+.slide img{
+ height: 65vh;
+}
+ .container-p{
+padding: 3px 10px;
+  border: PowderBlue 5px solid;
+  border-radius: 20px;
+}
+
+ .box{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+ }
+
+.card-body{
+  width: 200px;
+}
+
+.caracteristicas{
+  font-size:10px;
+}
+
+.boton1{
+  width: 100px;
+ background-color:orange;
+ border-radius: 20px;
+}
+.boton2{
+  width: 100px;
+  background: rgb(188, 93, 201);
+  border-radius: 20px;
+}
+.boton3{
+  width: 100px;
+  background-color: rgb(204, 22, 158);
+  border-radius: 20px;
+}
+.boton4{
+  width: 100px;
+  background: rgb(52, 215, 52);
+  border-radius: 20px;
+}
+.boton5{
+  width: 100px;
+  background: rgb(32, 139, 205);
+  border-radius: 20px;
+}
+.boton6{
+  width: 100px;
+  background: rgb(159, 215, 17);
+  border-radius: 20px;
+}
+
+.evolucion{
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  background: rgb(224, 222, 222);
+}
