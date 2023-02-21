@@ -12,9 +12,78 @@
     <title>Pokedex</title>
 </head>
 <body>
-    <header></header>
-    <main class="my-3">
-        <section class="container my-5">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-danger">
+            <div class="container">
+                <a class="navbar-brand text-light" href="#">Pokedex</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-white-50" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white-50" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Categorias
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="./error.html">Dragón</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./error.html">Hada</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./error.html">Fuego</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./error.html">Fantasma</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./error.html">Tierra</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./error.html">Psíquico</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./error.html">Siniestro</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./error.html">Eléctrico</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./error.html">Planta</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./error.html">Hielo</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="./error.html">Veneno</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white-50" href="./nosotros.html">Nosotros</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar un pokemon"
+                            aria-label="Search" />
+                        <button class="btn btn-outline-light" type="submit">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="mt-4 mb-4">
+        <section class="container mb-3">
             <article class="w-100">
                 <div id="carouselAutoplayingCaption" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-indicators">
@@ -112,7 +181,9 @@
             </article>
         </section>
     </main>
-    <footer></footer>
+    <footer class="container-fluid bg-dark text-light text-center py-4 fs-6">
+        <p>&#169Todos los derechos reservados</p>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
