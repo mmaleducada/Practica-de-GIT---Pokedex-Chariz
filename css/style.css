@@ -1,6 +1,11 @@
 .nav-link:hover{
     border:white solid 1px
 }
+
+*{
+    margin: 0;
+    padding: 0git;
+}
 .container{
     width: 100%;
     margin: 0px;
