@@ -4,21 +4,10 @@
 
 *{
     margin: 0;
-    padding: 0git;
-}
-.container{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-
+    padding: 0;
 }
 
-.card{
-  margin:10px;
-}
-
-.button1{
-background-color: greenyellow;
-border-radius: 15px;
+body {
+  overflow-x: hidden;
+  
 }
