@@ -1,20 +1,528 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Pagina de pokemones">
-    <meta name="keywords" content="pokemon, pikachu, charizard">
-    <meta name="author" content="Grupo Chariz">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <title>Pokedex</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pagina de pokemones">
+  <meta name="keywords" content="pokemon, pikachu, charizard">
+  <meta name="author" content="Grupo Chariz">
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <title>Pokedex</title>
 </head>
+
 <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-danger">
+      <div class="container">
+        <a class="navbar-brand text-light" href="#">Pokedex</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-white-50" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-white-50" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Categorias
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="./pages/error.html">Dragón</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./pages/error.html">Hada</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./pages/error.html">Fuego</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./pages/error.html">Fantasma</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./pages/error.html">Tierra</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./pages/error.html">Psíquico</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./pages/error.html">Siniestro</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./pages/error.html">Eléctrico</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./pages/error.html">Planta</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./pages/error.html">Hielo</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./pages/error.html">Veneno</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white-50" href="./pages/nosotros.html">Nosotros</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Buscar un pokemon" aria-label="Search" />
+            <button class="btn btn-outline-light" type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="my-4">
+    <section class="container mb-3">
+      <article class="w-100">
+        <div id="carouselAutoplayingCaption" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselAutoplayingCaption" data-bs-slide-to="0" class="active"
+              aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselAutoplayingCaption" data-bs-slide-to="1"
+              aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselAutoplayingCaption" data-bs-slide-to="2"
+              aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./img/carrusel/pokemon.png" class="d-block w-100" alt="charizard">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/carrusel/charizard.jpg" class="d-block w-100" alt="pokemon">
+            </div>
+            <div class="carousel-item">
+              <img src="./img/carrusel/pokemongo.jpg" class="d-block w-100" alt="pokemongo">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselAutoplayingCaption"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselAutoplayingCaption"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </article>
+      <article class="container-fluid">
+        <p>Los datos fueron tomados de la siguiente web <br><a
+            href="https://www.pokemon.com/el/pokedex">https://www.pokemon.com/el/pokedex</a></p>
+      </article>
+    </section>
+    <section class="container">
+      <div class="row justify-content-evenly">
+        <div class="card col-lg-3 col-md-4 col-12 mb-3 mx-1">
+          <img src="img/pokemonIndex/001.png" class="card-img-top" alt="imagen pokemon">
+          <div class="card-body">
+            <h5 class="card-title bg-gradient">Nº 001</h5>
+            <h2 class="card-text">Bulbasaur</h2>
+            <div class="py-3">
+              <button type="button" class="btn btn-success"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                Planta
+              </button>
+              <button type="button" class="btn btn-danger"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                Veneno
+              </button>
+            </div>
+            <a href="./pages/error.html" class="btn btn-primary">Ver detalle</a>
+          </div>
+        </div>
+        <div class="card col-lg-3 col-md-4 col-12 mb-3 mx-1">
+          <img src="img/pokemonIndex/002.png" class="card-img-top" alt="imagen pokemon">
+          <div class="card-body">
+            <h5 class="card-title bg-gradient">Nº 002</h5>
+            <h2 class="card-text">Ivysaur</h2>
+            <div class="py-3">
+              <button type="button" class="btn btn-success"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                Planta
+              </button>
+              <button type="button" class="btn btn-danger"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                Veneno
+              </button>
+            </div>
+            <a href="./pages/error.html" class="btn btn-primary">Ver detalle</a>
+          </div>
+        </div>
+        <div class="card col-lg-3 col-md-4 col-12 mb-3 mx-1">
+          <img src="img/pokemonIndex/003.png" class="card-img-top" alt="imagen pokemon">
+          <div class="card-body">
+            <h5 class="card-title bg-gradient">Nº 003</h5>
+            <h2 class="card-text">Venusaur</h2>
+            <div class="py-3">
+              <button type="button" class="btn btn-success"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                Planta
+              </button>
+              <button type="button" class="btn btn-danger"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                Veneno
+              </button>
+            </div>
+            <a href="./pages/error.html" class="btn btn-primary">Ver detalle</a>
+          </div>
+        </div>
+        <div class="card col-lg-3 col-md-4 col-12 mb-3 mx-1">
+          <img src="img/pokemonIndex/004.png" class="card-img-top" alt="imagen pokemon">
+          <div class="card-body">
+            <h5 class="card-title bg-gradient">Nº 004</h5>
+            <h2 class="card-text">Charmander</h2>
+            <div class="py-3">
+              <button type="button" class="btn btn-warning"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                Fuego
+              </button>
+            </div>
+            <a href="./pages/detallePokemon.html" class="btn btn-primary">Ver detalle</a>
+          </div>
+        </div>
+        <div class="card col-lg-3 col-md-4 col-12 mb-3 mx-1">
+          <img src="img/pokemonIndex/005.png" class="card-img-top" a lt="imagen pokemon">
+          <div class="card-body">
+            <h5 class="card-title bg-gradient">Nº 005</h5>
+            <h2 class="card-text">Charmeleon</h2>
+            <div class="py-3">
+              <button type="button" class="btn btn-warning"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                Fuego
+              </button>
+            </div>
+            <a href="./pages/error.html" class="btn btn-primary">Ver detalle</a>
+          </div>
+        </div>
+        <div class="card col-lg-3 col-md-4 col-12 mb-3 mx-1">
+          <img src="img/pokemonIndex/006.png" class="card-img-top" alt="imagen pokemon">
+          <div class="card-body">
+            <h5 class="card-title bg-gradient">Nº 006</h5>
+            <h2 class="card-text">Charizard</h2>
+            <div class="py-3">
+              <button type="button" class="btn btn-warning"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                Fuego
+              </button>
+              <button type="button" class="btn btn-secondary"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                Volador
+              </button>
+            </div>
+            <a href="./pages/error.html" class="btn btn-primary">Ver detalle</a>
+          </div>
+        </div>
+        <div class="card col-lg-3 col-md-4 col-12 mb-3 mx-1">
+          <img src="img/pokemonIndex/007.png" class="card-img-top" a lt="imagen pokemon">
+          <div class="card-body">
+            <h5 class="card-title bg-gradient">Nº 007</h5>
+            <h2 class="card-text">Squirte</h2>
+            <div class="py-3">
+              <button type="button" class="btn btn-primary"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                Agua
+              </button>
+            </div>
+            <a href="./pages/error.html" class="btn btn-primary">Ver detalle</a>
+          </div>
+        </div>
+        <div class="card col-lg-3 col-md-4 col-12 mb-3 mx-1">
+          <img src="img/pokemonIndex/008.png" class="card-img-top" alt="imagen pokemon">
+          <div class="card-body">
+            <h5 class="card-title bg-gradient">Nº 008</h5>
+            <h2 class="card-text">Wartortle</h2>
+            <div class="py-3">
+              <button type="button" class="btn btn-primary"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                Agua
+              </button>
+            </div>
+            <a href="./pages/error.html" class="btn btn-primary">Ver detalle</a>
+          </div>
+        </div>
+        <div class="card col-lg-3 col-md-4 col-12 mb-3 mx-1">
+          <img src="img/pokemonIndex/009.png" class="card-img-top" alt="imagen pokemon">
+          <div class="card-body">
+            <h5 class="card-title bg-gradient">Nº 009</h5>
+            <h2 class="card-text">Blastoise</h2>
+            <div class="py-3">
+              <button type="button" class="btn btn-primary"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                Agua
+              </button>
+            </div>
+            <a href="./pages/error.html" class="btn btn-primary">Ver detalle</a>
+          </div>
+        </div>
+        <div class="card col-lg-3 col-md-4 col-12 mb-3 mx-1">
+          <img src="img/pokemonIndex/010.png" class="card-img-top" alt="imagen pokemon">
+          <div class="card-body">
+            <h5 class="card-title bg-gradient">Nº 010</h5>
+            <h2 class="card-text">Caterpie</h2>
+            <div class="py-3">
+              <button type="button" class="btn btn-success"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                Bicho
+              </button>
+            </div>
+            <a href="./pages/error.html" class="btn btn-primary">Ver detalle</a>
+          </div>
+        </div>
+        <div class="card col-lg-3 col-md-4 col-12 mb-3 mx-1">
+          <img src="img/pokemonIndex/011.png" class="card-img-top" alt="imagen pokemon">
+          <div class="card-body">
+            <h5 class="card-title bg-gradient">Nº 011</h5>
+            <h2 class="card-text">Metapod</h2>
+            <div class="py-3">
+              <button type="button" class="btn btn-success"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                Bicho
+              </button>
+            </div>
+            <a href="./pages/error.html" class="btn btn-primary">Ver detalle</a>
+          </div>
+        </div>
+        <div class="card col-lg-3 col-md-4 col-12 mb-3 mx-1">
+          <img src="img/pokemonIndex/012.png" class="card-img-top" alt="imagen pokemon">
+          <div class="card-body">
+            <h5 class="card-title bg-gradient">Nº 012</h5>
+            <h2 class="card-text">Butterfree</h2>
+            <div class="py-3">
+              <button type="button" class="btn btn-success"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                Bicho
+              </button>
+              <button type="button" class="btn btn-secondary"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                Volador
+              </button>
+            </div>
+            <a href="./pages/error.html" class="btn btn-primary">Ver detalle</a>
+          </div>
+        </div>
+        <div class="card col-lg-3 col-md-4 col-12 mb-3 mx-1">
+          <img src="img/pokemonIndex/013.png" class="card-img-top" alt="imagen pokemon">
+          <div class="card-body">
+            <h5 class="card-title bg-gradient">Nº 013</h5>
+            <h2 class="card-text">weedle</h2>
+            <div class="py-3">
+              <button type="button" class="btn btn-success"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                Bicho
+              </button>
+              <button type="button" class="btn btn-dark"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                veneno
+              </button>
+            </div>
+            <a href="./pages/error.html" class="btn btn-primary">Ver detalle</a>
+          </div>
+        </div>
+        <div class="card col-lg-3 col-md-4 col-12 mb-3 mx-1">
+          <img src="img/pokemonIndex/014.png" class="card-img-top" alt="imagen pokemon">
+          <div class="card-body">
+            <h5 class="card-title bg-gradient">Nº 014</h5>
+            <h2 class="card-text">Kakuna</h2>
+            <div class="py-3">
+              <button type="button" class="btn btn-success"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                Bicho
+              </button>
+              <button type="button" class="btn btn-dark"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                veneno
+              </button>
+            </div>
+            <a href="./pages/error.html" class="btn btn-primary">Ver detalle</a>
+          </div>
+        </div>
+        <div class="card col-lg-3 col-md-4 col-12 mb-3 mx-1">
+          <img src="img/pokemonIndex/015.png" class="card-img-top" alt="imagen pokemon">
+          <div class="card-body">
+            <h5 class="card-title bg-gradient">Nº 015</h5>
+            <h2 class="card-text">Beedrill</h2>
+            <div class="py-3">
+              <button type="button" class="btn btn-success"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                Bicho
+              </button>
+              <button type="button" class="btn btn-dark"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                veneno
+              </button>
+            </div>
+            <a href="./pages/error.html" class="btn btn-primary">Ver detalle</a>
+          </div>
+        </div>
+        <div class="card col-lg-3 col-md-4 col-12 mb-3 mx-1">
+          <img src="img/pokemonIndex/016.png" class="card-img-top" alt="imagen pokemon">
+          <div class="card-body">
+            <h5 class="card-title bg-gradient">Nº 016</h5>
+            <h2 class="card-text">Pidgey</h2>
+            <div class="py-3">
+              <button type="button" class="btn btn-secondary"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                Normal
+              </button>
+              <button type="button" class="btn btn-dark"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                Volador
+              </button>
+            </div>
+            <a href="./pages/error.html" class="btn btn-primary">Ver detalle</a>
+          </div>
+        </div>
+        <div class="card col-lg-3 col-md-4 col-12 mb-3 mx-1">
+          <img src="img/pokemonIndex/017.png" class="card-img-top" alt="imagen pokemon">
+          <div class="card-body">
+            <h5 class="card-title bg-gradient">Nº 017</h5>
+            <h2 class="card-text">Pidgeotto</h2>
+            <div class="py-3">
+              <button type="button" class="btn btn-secondary"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                Normal
+              </button>
+              <button type="button" class="btn btn-dark"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                Volador
+              </button>
+            </div>
+            <a href="./pages/error.html" class="btn btn-primary">Ver detalle</a>
+          </div>
+        </div>
+        <div class="card col-lg-3 col-md-4 col-12 mb-3 mx-1">
+          <img src="img/pokemonIndex/018.png" class="card-img-top" alt="imagen pokemon">
+          <div class="card-body">
+            <h5 class="card-title bg-gradient">Nº 018</h5>
+            <h2 class="card-text">Pidgeot</h2>
+            <div class="py-3">
+              <button type="button" class="btn btn-secondary"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                Normal
+              </button>
+              <button type="button" class="btn btn-dark"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                Volador
+              </button>
+            </div>
+            <a href="./pages/error.html" class="btn btn-primary">Ver detalle</a>
+          </div>
+        </div>
+        <div class="card col-lg-3 col-md-4 col-12 mb-3 mx-1">
+          <img src="img/pokemonIndex/019.png" class="card-img-top" alt="imagen pokemon">
+          <div class="card-body">
+            <h5 class="card-title bg-gradient">Nº 019</h5>
+            <h2 class="card-text">Rattata</h2>
+            <div class="py-3">
+              <button type="button" class="btn btn-secondary"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                Normal
+              </button>
+            </div>
+            <a href="./pages/error.html" class="btn btn-primary">Ver detalle</a>
+          </div>
+        </div>
+        <div class="card col-lg-3 col-md-4 col-12 mb-3 mx-1">
+          <img src="img/pokemonIndex/020.png" class="card-img-top" alt="imagen pokemon">
+          <div class="card-body">
+            <h5 class="card-title bg-gradient">Nº 020</h5>
+            <h2 class="card-text">Raticate</h2>
+            <div class="py-3">
+              <button type="button" class="btn btn-secondary"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                Normal
+              </button>
+            </div>
+            <a href="./pages/error.html" class="btn btn-primary">Ver detalle</a>
+          </div>
+        </div>
+        <div class="card col-lg-3 col-md-4 col-12 mb-3 mx-1">
+          <img src="img/pokemonIndex/021.png" class="card-img-top" alt="imagen pokemon">
+          <div class="card-body">
+            <h5 class="card-title bg-gradient">Nº 021</h5>
+            <h2 class="card-text">Spearow</h2>
+            <div class="py-3">
+              <button type="button" class="btn btn-secondary"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                Normal
+              </button>
+              <button type="button" class="btn btn-warning"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                Volador
+              </button>
+            </div>
+            <a href="./pages/error.html" class="btn btn-primary">Ver detalle</a>
+          </div>
+        </div>
+        <div class="card col-lg-3 col-md-4 col-12 mb-3 mx-1">
+          <img src="img/pokemonIndex/022.png" class="card-img-top" alt="imagen pokemon">
+          <div class="card-body">
+            <h5 class="card-title bg-gradient">Nº 022</h5>
+            <h2 class="card-text">Fearow</h2>
+            <div class="py-3">
+              <button type="button" class="btn btn-secondary"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                Normal
+              </button>
+              <button type="button" class="btn btn-warning"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                Volador
+              </button>
+            </div>
+            <a href="./pages/error.html" class="btn btn-primary">Ver detalle</a>
+          </div>
+        </div>
+        <div class="card col-lg-3 col-md-4 col-12 mb-3 mx-1">
+          <img src="img/pokemonIndex/023.png" class="card-img-top" alt="imagen pokemon">
+          <div class="card-body">
+            <h5 class="card-title bg-gradient">Nº 023</h5>
+            <h2 class="card-text">Ekans</h2>
+            <div class="py-3">
+              <button type="button" class="btn btn-info"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                veneno
+              </button>
+            </div>
+            <a href="./pages/error.html" class="btn btn-primary">Ver detalle</a>
+          </div>
+        </div>
+        <div class="card col-lg-3 col-md-4 col-12 mb-3 mx-1">
+          <img src="img/pokemonIndex/024.png" class="card-img-top" alt="imagen pokemon">
+          <div class="card-body">
+            <h5 class="card-title bg-gradient">Nº 024</h5>
+            <h2 class="card-text">Arbok</h2>
+            <div class="py-3">
+              <button type="button" class="btn btn-warning"
+                style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
+                Veneno
+              </button>
+            </div>
+            <a href="./pages/error.html" class="btn btn-primary">Ver detalle</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="bg-dark text-light text-center py-4">
+    <p>&copy;Todos los derechos reservados</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
 </body>
+
 </html>
